@@ -6,20 +6,27 @@
 //plus the value of the name parameter.
 
 //Code here
-
+function greeting(name){
+  return "Hello, " + name;
+}
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
 //Code Here
-
+let newGreeting = function(name) {
+  return "Hello, " + name;
+}
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
 //Code Here
+let finalGreeting = name => {
+ return "Hello, " + name; 
+}
 
 //////////////////PROBLEM 4////////////////////
 
@@ -27,15 +34,24 @@
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
-
+let groceries = ["apples", "milk", "eggs", "bread"];
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
-
 //If the array does not contain "chocolate", add "chocolate".
 //doubleCheck should return the array.
 
 //Code Here
+let doubleCheck = arr => {
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] != 'chocolate'){
+         arr.push('chocolate');
+         break; 
+    }
+  }
+  return arr
+}
 
+console.log(doubleCheck(groceries));
 //////////////////PROBLEM 5////////////////////
 
 //Create an object saved to the variable dog.
