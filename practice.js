@@ -51,7 +51,7 @@ let doubleCheck = arr => {
   return arr
 }
 
-console.log(doubleCheck(groceries));
+
 //////////////////PROBLEM 5////////////////////
 
 //Create an object saved to the variable dog.
@@ -60,20 +60,31 @@ console.log(doubleCheck(groceries));
 //and goodBoy (a boolean).
 
 //Code Here
+let dog = {
+  name: 'Spot',
+  color: 'Brown',
+  age: 5,
+  goodBoy: true
+};
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
+
 //Code Here
+let devMountainClassPet = dog.name;
 
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
 
 //Code Here
+dog.bark = () => {return 'Woof woof'};
+
 
 //Store the result of invoking the bark method in a variable called ruff.
 
 //Code Here
+let ruff = dog.bark();
 
 //////////////////PROBLEM 6////////////////////
 
@@ -87,6 +98,8 @@ console.log(doubleCheck(groceries));
 //Return mySum.
 
 //Code Here
+
+
 
 //////////////////PROBLEM 7////////////////////
 
